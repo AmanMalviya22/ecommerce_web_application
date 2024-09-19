@@ -1,18 +1,95 @@
+# E-commerce Web Application with Stripe Payment Gateway
 
-Modern Full Stack ECommerce Application with Stripe payment gateway
+An E-commerce web application that allows users to browse products, add items to their cart, and securely process payments using Stripe. This project is built with a modern web stack to provide a seamless shopping experience.
 
-**Build and Deploy a fully responsive Modern Full Stack Ecommerce application with Payments functionality**. With Modern design, animations, the ability to add and edit products on the go using a CMS, all advanced cart functionalities, and most importantly the complete integration with Stripe so that you can cover REAL payments. This is the best e-commerce website project that you can currently find on YouTube!
+## Folder Structure
 
-In this video, you'll learn:
-- Advanced React Best Practices such as
-    - Folder and file structure, hooks and refs
-- Advanced State Management of the entire application using React Context API
-- Next.js Best Practices such as
-    - File-based routing, Data fetching that allows server-side rendering and static generation which makes your websites incredibly optimized (show getServerSideProps, getStaticPaths, getStaticProps), and you’ll also learn how to use Next.js as a backend endpoint.
-- You’ll learn how to integrate Stripe to manage payments, products, shipping rates, and the entire checkout process
-- And most importantly you’ll learn how to manage the entire content of your app using Sanity. Sanity is the unified content platform that’ll make the making of our entire app possible. <show sanity desk>
-- Through Sanity, you or your clients will be able to change the store’s homepage and more importantly, the details of all the products in the store, instantly and on the go!
-- Sanity allows us to focus on developing the application without having to worry about the content, file storage, and databases. They’ll cover the dirty work for us and allow us to build scalable and modern e-commerce web applications extremely easily.
+```bash
+ecommerce-app/
+│
+├── backend/                 # Backend Node.js server
+│   ├── controllers/         # Controllers for handling requests
+│   ├── models/              # MongoDB models
+│   ├── routes/              # API routes
+│   ├── middlewares/         # Authentication and error handling
+│   ├── config/              # Configuration for environment and Stripe
+│   └── app.js               # Main server entry point
+│
+├── frontend/                # Frontend React application
+│   ├── src/
+│   │   ├── components/      # Reusable UI components
+│   │   ├── pages/           # Pages like Home, Product, Cart, Checkout
+│   │   ├── services/        # API calls and business logic
+│   │   ├── App.js           # Main React app
+│   │   └── index.js         # React entry point
+│   ├── public/              # Static files
+│   └── package.json         # Frontend dependencies
+│
+├── .env                     # Environment variables for Stripe keys and other secrets
+├── README.md                # Project documentation
+├── package.json             # Backend dependencies
+└── server.js                # Entry point for backend server
+
+
+## Project Setup
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+
+- **Node.js** (version 14 or higher)
+- **MongoDB** (ensure a local instance is running or use a cloud instance)
+- **Stripe Account** (for API keys)
+
+### Installation
+
+#### 1. Clone the repository
+
+
+git clone https://github.com/your-username/ecommerce-app.git
+cd ecommerce-app
+
+
+#### 2. Backend Setup
+
+ Navigate to the backend folder:
+
+ cd backend
+
+Install dependencies:
+
+  npm install
+
+Create a .env file in the backend folder and add your environment variables:
+
+    PORT=5000
+    MONGO_URI=your_mongo_db_uri
+    STRIPE_SECRET_KEY=your_stripe_secret_key
+
+
+Start the backend server:
+
+  npm start
+
+#### 3. Frontend Setup
+Navigate to the frontend folder:
+
+   cd ../frontend
+
+Install dependencies:
+
+   npm install
+Start the React development server:
+
+npm start
+
+Running the Application
+Ensure both MongoDB and Stripe configurations are correctly set.
+Run the backend server and React frontend.
+Open your browser and navigate to http://localhost:3000 to view the application.
+
+
+
 
 ![image](https://user-images.githubusercontent.com/70088342/160780701-7bb38a57-76bd-49a2-a4ec-49f89c50a7c7.png)
 ![image](https://user-images.githubusercontent.com/70088342/160780206-9cfe7c0a-3d8e-4a20-a055-b12efebe6c30.png)
