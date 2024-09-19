@@ -4,90 +4,90 @@ An E-commerce web application that allows users to browse products, add items to
 
 ## Folder Structure
 
-```bash
-ecommerce-app/
-│
-├── backend/                 # Backend Node.js server
-│   ├── controllers/         # Controllers for handling requests
-│   ├── models/              # MongoDB models
-│   ├── routes/              # API routes
-│   ├── middlewares/         # Authentication and error handling
-│   ├── config/              # Configuration for environment and Stripe
-│   └── app.js               # Main server entry point
-│
-├── frontend/                # Frontend React application
-│   ├── src/
-│   │   ├── components/      # Reusable UI components
-│   │   ├── pages/           # Pages like Home, Product, Cart, Checkout
-│   │   ├── services/        # API calls and business logic
-│   │   ├── App.js           # Main React app
-│   │   └── index.js         # React entry point
-│   ├── public/              # Static files
-│   └── package.json         # Frontend dependencies
-│
-├── .env                     # Environment variables for Stripe keys and other secrets
-├── README.md                # Project documentation
-├── package.json             # Backend dependencies
-└── server.js                # Entry point for backend server
-
-
-## Project Setup
-
-### Prerequisites
-
-Before you begin, ensure you have the following installed on your machine:
-
-- **Node.js** (version 14 or higher)
-- **MongoDB** (ensure a local instance is running or use a cloud instance)
-- **Stripe Account** (for API keys)
-
-### Installation
-
-#### 1. Clone the repository
-
-
-git clone https://github.com/your-username/ecommerce-app.git
-cd ecommerce-app
-
-
-#### 2. Backend Setup
-
- Navigate to the backend folder:
-
- cd backend
-
-Install dependencies:
-
-  npm install
-
-Create a .env file in the backend folder and add your environment variables:
-
-    PORT=5000
-    MONGO_URI=your_mongo_db_uri
-    STRIPE_SECRET_KEY=your_stripe_secret_key
-
-
-Start the backend server:
-
+  ```bash
+  ecommerce-app/
+  │
+  ├── backend/                 # Backend Node.js server
+  │   ├── controllers/         # Controllers for handling requests
+  │   ├── models/              # MongoDB models
+  │   ├── routes/              # API routes
+  │   ├── middlewares/         # Authentication and error handling
+  │   ├── config/              # Configuration for environment and Stripe
+  │   └── app.js               # Main server entry point
+  │
+  ├── frontend/                # Frontend React application
+  │   ├── src/
+  │   │   ├── components/      # Reusable UI components
+  │   │   ├── pages/           # Pages like Home, Product, Cart, Checkout
+  │   │   ├── services/        # API calls and business logic
+  │   │   ├── App.js           # Main React app
+  │   │   └── index.js         # React entry point
+  │   ├── public/              # Static files
+  │   └── package.json         # Frontend dependencies
+  │
+  ├── .env                     # Environment variables for Stripe keys and other secrets
+  ├── README.md                # Project documentation
+  ├── package.json             # Backend dependencies
+  └── server.js                # Entry point for backend server
+  
+  
+  ## Project Setup
+  
+  ### Prerequisites
+  
+  Before you begin, ensure you have the following installed on your machine:
+  
+  - **Node.js** (version 14 or higher)
+  - **MongoDB** (ensure a local instance is running or use a cloud instance)
+  - **Stripe Account** (for API keys)
+  
+  ### Installation
+  
+  #### 1. Clone the repository
+  
+  
+  git clone https://github.com/your-username/ecommerce-app.git
+  cd ecommerce-app
+  
+  
+  #### 2. Backend Setup
+  
+   Navigate to the backend folder:
+  
+   cd backend
+  
+  Install dependencies:
+  
+    npm install
+  
+  Create a .env file in the backend folder and add your environment variables:
+  
+      PORT=5000
+      MONGO_URI=your_mongo_db_uri
+      STRIPE_SECRET_KEY=your_stripe_secret_key
+  
+  
+  Start the backend server:
+  
+    npm start
+  
+  #### 3. Frontend Setup
+  Navigate to the frontend folder:
+  
+     cd ../frontend
+  
+  Install dependencies:
+  
+     npm install
+  Start the React development server:
+  
   npm start
-
-#### 3. Frontend Setup
-Navigate to the frontend folder:
-
-   cd ../frontend
-
-Install dependencies:
-
-   npm install
-Start the React development server:
-
-npm start
-
-Running the Application
-Ensure both MongoDB and Stripe configurations are correctly set.
-Run the backend server and React frontend.
-Open your browser and navigate to http://localhost:3000 to view the application.
-
+  
+  Running the Application
+  Ensure both MongoDB and Stripe configurations are correctly set.
+  Run the backend server and React frontend.
+  Open your browser and navigate to http://localhost:3000 to view the application.
+  ```
 
 
 
